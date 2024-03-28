@@ -1,0 +1,22 @@
+//3. Dado dois lados de um quadrado informe a área
+
+#include <stdio.h>
+
+int main(void)
+{
+    
+    int lado1, lado2;
+    int area;
+    
+    fflush(stdin);
+    printf("Insira um lado do quadrado:\n");
+    scanf("%d", &lado1);
+    
+    fflush(stdin);
+    printf("Insira o outro lado do quadrado:\n");
+    scanf("%d", &lado2);
+    
+    area = lado1 * lado2;
+
+    printf("A area do quadrado eh:  %d\n", area);
+}
