@@ -1,0 +1,22 @@
+//4. Dado dois lados de um quadrado informe seu perímetro
+
+#include <stdio.h>
+
+int main(void)
+{
+    
+    int lado1, lado2;
+    int perimetro;
+    
+    fflush(stdin);
+    printf("Insira um lado do quadrado:\n");
+    scanf("%d", &lado1);
+    
+    fflush(stdin);
+    printf("Insira o outro lado do quadrado:\n");
+    scanf("%d", &lado2);
+    
+    perimetro = (lado1 + lado1) + (lado2 + lado2);
+
+    printf("O perimetro do quadrado eh:  %d\n", perimetro);
+}
