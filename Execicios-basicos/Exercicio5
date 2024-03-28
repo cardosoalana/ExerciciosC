@@ -1,0 +1,22 @@
+//5. Dado dois lados de um triangulo informe a área
+
+#include <stdio.h>
+
+int main(void)
+{
+    
+    int base, altura;
+    int area;
+    
+    fflush(stdin);
+    printf("Insira a base do triangulo:\n");
+    scanf("%d", &base);
+    
+    fflush(stdin);
+    printf("Insira a altura do triangulo:\n");
+    scanf("%d", &altura);
+    
+    area = (base * altura) / 2;
+
+    printf("A area do triangulo eh:  %d\n", area);
+}
