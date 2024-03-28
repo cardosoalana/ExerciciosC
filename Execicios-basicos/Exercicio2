@@ -1,0 +1,31 @@
+//2. Leia quatro números e informe a média
+
+#include <stdio.h>
+
+int main(void)
+{
+    
+    int num1, num2, num3, num4;
+    int media;
+    
+    fflush(stdin);
+    printf("Insira um numero:\n");
+    scanf("%d", &num1);
+    
+    fflush(stdin);
+    printf("Insira mais um numero:\n");
+    scanf("%d", &num2);
+    
+    fflush(stdin);
+    printf("Insira mais um numero:\n");
+    scanf("%d", &num3);
+    
+    fflush(stdin);
+    printf("Insira mais um numero:\n");
+    scanf("%d", &num4);
+    
+    
+    media = (num1 + num2 + num3 + num4) / 4;
+
+    printf("A media eh:  %d\n", media);
+}
