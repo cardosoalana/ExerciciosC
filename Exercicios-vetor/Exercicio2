@@ -1,0 +1,79 @@
+/* 1.Leia 5 números em um vetor, leia mais 5 números em um segundo vetor, solicite a operação (+,-,*,/) e o
+resultado imprima em um segundo vetor. */ 
+
+#include <stdio.h>
+
+int main(void) {
+
+    int num = 4;
+	int valores1[num];
+	int valores2[num];
+	int resultado;
+	char calculo;
+	
+	fflush(stdin);
+	printf("Escolha uma operacao: \n(adicao = +; subtracao = -; multiplicacao = *; divisao = /)\n");
+	scanf("%c", &calculo);
+	
+    printf("Digite 5 valores:\n");
+	for (int i; i <= num; i++) {
+	    fflush(stdin);
+	    scanf("%d", &valores1[i]);
+	}
+
+    printf("Digite mais 5 valores:\n");
+	for (int i; i <= num; i++) {
+	    fflush(stdin);
+	    scanf("%d", &valores2[i]);
+	}
+	
+	switch (calculo) {
+	    case '+':
+	    	printf("Resultado das somas!\n");
+	        for (int i; i <= num; i++) {
+	            resultado = valores1[i] + valores2[i];
+	        }
+	        
+	        for (int i; i <= num; i++) {
+	            printf("->%d\n", resultado);
+	        }
+	        break;
+	        
+        case '-':
+        	printf("Resultado das subtracoes!\n");
+	        for (int i; i <= num; i++) {
+	            resultado = valores1[i] - valores2[i];
+	        }
+	        
+	        for (int i; i <= num; i++) {
+	            printf("->%d\n", resultado);
+	        }
+            break;
+            
+        case '*': 
+           	printf("Resultado das multiplicacoes!\n");
+	        for (int i; i <= num; i++) {
+	            resultado = valores1[i] * valores2[i];
+	        }
+	        
+	        for (int i; i <= num; i++) {
+	            printf("->%d\n", resultado);
+	        }
+            break;
+            
+        case '/':
+           	printf("Resultado das divisoes!\n");
+	        for (int i; i <= num; i++) {
+	            resultado = valores1[i] / valores2[i];
+            }
+            
+            for (int i; i <= num; i++) {
+	            printf("->%d\n", resultado);
+	        }
+            break;
+            
+        default:
+            printf("Operacao inexistente.\n");
+            break;
+	}
+}
