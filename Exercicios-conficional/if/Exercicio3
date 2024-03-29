@@ -1,0 +1,27 @@
+// 3. Leia o valor da temperatura da agua e informe se ela está congelada, em estado líquido ou fervendo
+
+#include <stdio.h>
+
+int main(void) {
+
+	float temperaturaAgua;
+	
+	fflush(stdin);
+	printf("Digite o valor da temperatura da agua\n");
+	scanf("%f", &temperaturaAgua);
+	
+	if(temperaturaAgua > 100) 
+	{
+		printf("A agua esta em estado gasoso\n");
+	}
+	
+	if (temperaturaAgua < 0) 
+	{
+		printf("A agua esta em estado solido\n");
+	}
+	
+	if ((temperaturaAgua > 0) && (temperaturaAgua < 100)) 
+	{
+		printf("A agua esta em estado liquido\n");
+	}
+}
