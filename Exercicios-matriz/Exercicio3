@@ -1,0 +1,25 @@
+/* 3.Escrever um programa que gere a tabuada de 1 a 10 (algoritmo, código). 
+*/ 
+
+#include <stdio.h>
+int main(void) {
+
+    int linha = 10;
+    int coluna = 10;
+    
+    int tabuada[linha][coluna];
+
+    for (int x = 0; x < linha; x++) {
+        for (int y = 0; y < coluna; y++) {
+            tabuada[x][y] = (x+1) * (y+1);
+        }
+    }
+    
+    for (int x = 0; x < linha; x++) {
+        for (int y = 0; y < coluna; y++) {
+            printf("%d; ",tabuada[x][y]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
