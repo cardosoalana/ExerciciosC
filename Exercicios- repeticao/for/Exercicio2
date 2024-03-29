@@ -1,0 +1,27 @@
+//2) Fazer um programa para receber um número inteiro do usuário e determinar se este número é primo ou não.
+
+#include <stdio.h>
+
+int main(void) {
+	
+	int n = 0;
+	int i = 0;
+
+	fflush(stdin);
+	printf("Insira um valor inteiro para saber se eh primo: \n");
+	scanf("%d", &n);
+	
+	for (int x = 2; x <= n; x++) {
+		if (n % x == 0) {
+			i++;
+		}
+	}
+	
+	if (i < 3) {
+		printf("Numero eh primo %d", n);
+	} else {
+		printf("Numero nao eh primo %d", n);
+
+	}
+	
+}
