@@ -1,0 +1,36 @@
+/* 2.Escrever m linhas com i asteriscos alinhadas pela esquerda, onde i corresponde ao número da linha corrente
+(algoritmo, código). Exemplo: Para m=6 a saída do programa deve ser
+*
+**
+***
+****
+*****
+******
+*/ 
+
+#include <stdio.h>
+int main(void) {
+
+    int linha;
+    
+    printf("Digite a quantidade de linhas da matriz:");
+    scanf("%d", &linha);
+    
+    int coluna = 0;
+    char lista[linha][linha];
+
+    for (int x = 0; x < linha; x++) {
+        for (int y = 0; y < coluna; y++) {
+            lista[x][y] = '*';
+        }
+        coluna++;
+    }
+    
+    for (int x = 0; x < linha; x++) {
+        for (int y = 0; y < coluna; y++) {
+            printf("%c",lista[x][y]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
