@@ -1,0 +1,26 @@
+/* 4.Crie um vetor de 20 posições com a seguinte sequencia numérica
+1,-1,1,-1,1,...
+Após o preenchimento imprima o vetor*/ 
+
+#include <stdio.h>
+
+int main(void) {
+
+    int num = 20;
+	int lista[num];
+	int contador = -1;
+
+	for (int i; i <= num; i++) {
+	   lista[i] = contador;
+	   if (i % 2 == 0) {
+	        contador = contador + 2;
+	   } else {
+	       contador = contador - 2;
+	   }
+	}
+
+    printf("O vetor eh: \n");
+	for (int i; i <= num; i++) {
+	    printf("%d; ",lista[i]);
+	}
+}
