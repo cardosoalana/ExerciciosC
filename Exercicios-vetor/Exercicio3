@@ -1,0 +1,22 @@
+/* 3.Crie um vetor de 20 posições com a seguinte sequencia numérica
+2,4,6,8,10,...
+Após o preenchimento imprima o vetor. */ 
+
+#include <stdio.h>
+
+int main(void) {
+
+    int num = 20;
+	int lista[num];
+	int contador = 2;
+	
+	for (int i; i <= num; i++) {
+	   lista[i] = contador;
+	   contador = contador + 2;
+	}
+
+    printf("O vetor eh: \n");
+	for (int i; i <= num; i++) {
+	    printf("%d; ",lista[i]);
+	}
+}
