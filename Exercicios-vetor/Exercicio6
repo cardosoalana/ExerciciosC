@@ -1,0 +1,28 @@
+/* 6.Crie um vetor de 10 posições com a seguinte sequencia numérica
+1,2,4,8,16,32,...
+Um segundo vetor receber a subtração do segundo elemento com o primeiro, do terceiro com o primeiro, etc
+Após o preenchimento imprima o vetor*/ 
+
+#include <stdio.h>
+
+int main(void) {
+
+    int num = 10;
+	int lista[num];
+	int lista2[num];
+	int contador = 2;
+
+	for (int i; i <= num; i++) {
+	   lista[i] = contador;
+	   contador = contador * 2;
+	}
+
+    for (int i; i <= num; i++) {
+        lista2[i] = lista[i] - lista[0];
+    }
+    
+    printf("O vetor eh: \n");
+	for (int i; i <= num; i++) {
+	    printf("%d; ",lista2[i]);
+	}
+}
