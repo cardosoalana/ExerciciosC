@@ -1,0 +1,55 @@
+/* 2. Crie uma calculadora que leia 2 números e imprima o
+menu abaixo:
+Digite:
+1 Para imprimir a soma dos dois números
+2 Para imprimir a subtração dos dois números
+3 Para imprimir a multiplicação dos dois números
+4 Para imprimir a divisão dos dois números
+Obs. Avise o usuário sobre divisão por zero. */ 
+
+#include <stdio.h>
+
+int main(void) {
+
+	char calculo; 
+	int valor1, valor2;
+	int resultado;
+	
+	fflush(stdin);
+	printf("Escolha uma operacao: \n(adicao = +; subtracao = -; multiplicacao = *; divisao = /)\n");
+	scanf("%c", &calculo);
+	
+	fflush(stdin);
+	printf("Digite um valor:\n");
+	scanf("%d", &valor1);
+	
+	fflush(stdin);
+	printf("Digite mais um valor:\n");
+	scanf("%d", &valor2);
+	
+	switch (calculo) {
+	    case '+':
+	        resultado = valor1 + valor2;
+	    	printf("Resultado da soma eh %d!\n", resultado);
+	        break;
+        case '-':
+            resultado = valor1 - valor2;
+            printf("Resultado da subtracao eh %d!\n", resultado);
+            break;
+        case '*': 
+            resultado = valor1 * valor2;
+            printf("Resultado da multiplicacao eh %d!\n", resultado);
+            break;
+        case '/':
+            if (valor1 == 0 || valor2 == 0) 
+                printf("Não eh possivel realizar uma divisao por 0.");
+            else {
+                resultado = valor1 / valor2;
+                printf("Resultado da divisao eh %d", resultado);
+            }
+            break;
+        default:
+            printf("Operacao inexistente.\n");
+            break;
+	}
+}
