@@ -1,0 +1,13 @@
+//1) Faça um programa em C que Realize uma contagem decrescente de 99 a 0 utilizando while;
+
+#include <stdio.h>
+
+int main(void) {
+	int valor = 100;
+	
+	while (valor > 0) {
+		valor--;
+		
+		printf("Valor:%d\n", valor);
+	}
+}
