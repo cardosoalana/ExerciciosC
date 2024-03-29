@@ -1,0 +1,36 @@
+/* 1. Leia dois números no teclado, X e y. Imprima a quantidade de asteriscos de acordo com os valores de X e Y,
+ex. Se ler 5 e 4, imprime:
+*****
+*****
+*****
+*****
+*/ 
+
+#include <stdio.h>
+int main(void) {
+
+    int linha;
+    int coluna;
+    
+    printf("Digite a quantidade de linhas da matriz:");
+    scanf("%d", &linha);
+    
+    printf("Digite a quantidade de colunas da matriz:");
+    scanf("%d", &coluna);
+    
+    char lista[linha][coluna];
+
+    for (int x = 0; x < linha; x++) {
+        for (int y = 0; y < coluna; y++) {
+            lista[x][y] = '*';
+        }
+    }
+    
+    for (int x = 0; x < linha; x++) {
+        for (int y = 0; y < coluna; y++) {
+            printf("%c",lista[x][y]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
