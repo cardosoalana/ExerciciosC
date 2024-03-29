@@ -1,0 +1,30 @@
+// Pesquise na internet qual a faixa salarial das classes sociais A, B, C e D, solicite ao usuário informar o seu salário e informe em qual classe ele esta;
+#include <stdio.h>
+
+int main(void) {
+
+	float renda; 
+	
+	fflush(stdin);
+	printf("Digite o valor da sua renda \n");
+	scanf("%f", &renda);
+	
+	if(renda > 22000) {
+		printf("A renda se enquadra na classe social A\n");
+	}
+
+	if ((renda > 7100)&&(renda < 22000)) 
+	{
+		printf("A renda se enquadra na classe social B\n");
+	}
+
+	if ((renda > 2900)&&(renda < 7100)) 
+	{
+		printf("A renda se enquadra na classe social C\n");
+	}
+	
+	if (renda < 2900)
+	{
+		printf("A renda se enquadra na classe social D\n");
+	}
+}
