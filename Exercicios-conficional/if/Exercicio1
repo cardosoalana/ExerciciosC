@@ -1,0 +1,25 @@
+//1. Leia o preço de dois produtos e informe se o primeiro é maior que o segundo
+
+#include <stdio.h>
+
+int main(void) {
+	float valorProduto1, valorProduto2;
+	
+	fflush(stdin);
+	printf("Adicione o valor do primeiro produto \n");
+	scanf("%f", &valorProduto1);
+	
+	fflush(stdin);
+	printf("Adicione o valor do segundo produto \n");
+	scanf("%f", &valorProduto2);
+	
+	if (valorProduto1 > valorProduto2) 
+	{
+		printf("O primeiro produto eh maior que o segundo produto \n");
+
+	} 
+	else 
+	{
+		printf("O primeiro produto eh menor que o segundo produto \n");
+	}
+}
