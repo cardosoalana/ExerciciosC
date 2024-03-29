@@ -1,0 +1,32 @@
+/* 4) Escreva um programa que gere a matriz abaixo
+1 2 3 4 5 6
+7 8 9 10 11 12
+13 14 15 16 17 18
+19 20 21 22 23 24
+25 26 27 28 29 30 
+*/ 
+
+#include <stdio.h>
+int main(void) {
+
+    int linha = 6;
+    int coluna = 5;
+    int contador = 1;
+    
+    int matriz[linha][coluna];
+
+    for (int x = 0; x < linha; x++) {
+        for (int y = 0; y < coluna; y++) {
+            matriz[x][y] = contador;
+            contador ++;
+        }
+    }
+    
+    for (int x = 0; x < linha; x++) {
+        for (int y = 0; y < coluna; y++) {
+            printf("%d; ",matriz[x][y]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
