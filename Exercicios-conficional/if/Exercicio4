@@ -1,0 +1,41 @@
+// Leia 4 notas, calcule a média e informe se o aluno passou por média, ficou de exame ou reprovou direto
+
+#include <stdio.h>
+
+int main(void) {
+
+	float nota1, nota2, nota3, nota4, media;
+	
+	fflush(stdin);
+	printf("Entre com a nota 1 \n");
+	scanf("%f", &nota1);
+	
+	fflush(stdin);
+	printf("Entre com a nota 2 \n");
+	scanf("%f", &nota2);
+
+	fflush(stdin);
+	printf("Entre com a nota 3 \n");
+	scanf("%f", &nota3);
+	
+	fflush(stdin);
+	printf("Entre com a nota 4 \n");
+	scanf("%f", &nota4);
+		
+	media = (nota1 + nota2 + nota3 + nota4)/4;
+	printf("A media eh: %.1f \n", media);
+	
+	if(media > 7) {
+		printf("Aprovado\n");
+	}
+	
+	if (media < 3.4) 
+	{
+		printf("Reprovado\n");
+	}
+	
+	if ((media > 3.4)&&(media < 7)) 
+	{
+		printf("Exame final\n");
+	}
+}
