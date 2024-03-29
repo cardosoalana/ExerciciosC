@@ -1,0 +1,11 @@
+//2) Faça um programa em C que Realize uma contagem decrescente de 99 a 0 utilizando for;
+
+#include <stdio.h>
+
+int main(void) {
+	
+	for (int x = 99; x >= 0; x--) 
+	{
+		printf("Valor: %d\n", x);
+	}
+}
